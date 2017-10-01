@@ -94,16 +94,8 @@ opioidRX$Zip<- as.factor(clean.zipcodes(opioidRX$`NPPES Provider Zip Code`))
 Include only States, DC, and Puerto Rico. Remove territories or military locations: "XX" "ZZ" "VI" "MP" "GU" "AS" "AP" "AA" "AE". Then remove unused State factor levels.
 
 ```r
-opioidRX <- subset(opioidRX, State != "XX")
-opioidRX <- subset(opioidRX, State != "ZZ")
-opioidRX <- subset(opioidRX, State != "VI")
-opioidRX <- subset(opioidRX, State != "MP")
-opioidRX <- subset(opioidRX, State != "GU")
-opioidRX <- subset(opioidRX, State != "AS")
-opioidRX <- subset(opioidRX, State != "AP")
-opioidRX <- subset(opioidRX, State != "AA")
-opioidRX <- subset(opioidRX, State != "AE")
-## opioidRX <- subset(opioidRX, State != c("XX" ,"ZZ", "VI", "MP", "GU", "AS", "AP", "AA", "AE"))
+opioidRX <- subset(opioidRX, !(State %in% c("XX" ,"ZZ", "VI", "MP", "GU", "AS", "AP", "AA", "AE")))
+
 
 opioidRX$State <- droplevels(opioidRX$State)
 ```
