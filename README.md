@@ -2,7 +2,9 @@
 
 Explore and visualize data on Opioid prescriptions covered by Medicare part D in 2014, by MD, State, Zip. Data set includes, per MD, total number of prescriptions & number of opiate prescriptions.
 
-Read a blog post with a summary of results focusing on Dentist prescribers [here](https://towardsdatascience.com/mississippi-dental-opioid-epicenter-of-2014-ab4d7f68fa49)
+Read a blog post with a summary of results focusing on Dentist prescribers [here](https://towardsdatascience.com/mississippi-dental-opioid-epicenter-of-2014-ab4d7f68fa49).
+
+Read more about my work on my [website](https://jenny-listman.netlify.com).
 
 File "Medicare_Part_D_Opioid_Prescriber_Summary_File_2014.csv" downloaded from https://data.cms.gov/Medicare-Claims/Medicare-Part-D-Opioid-Prescriber-Summary-File-201/e4ka-3ncx/data.
 
